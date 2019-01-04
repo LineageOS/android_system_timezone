@@ -16,6 +16,8 @@
 
 """Generates a time zone distro file"""
 
+from __future__ import print_function
+
 import argparse
 import os
 import shutil
@@ -99,7 +101,7 @@ def main():
       tzlookup_file=tzlookup_file,
       output_dir=output_dir)
 
-  print 'Distro files created in %s' % output_dir
+  print('Distro files created in %s' % output_dir)
   sys.exit(0)
 
 
