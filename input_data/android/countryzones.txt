@@ -25,7 +25,7 @@
 # a time zone for an Android device.
 
 # ianaVersion: The version of the IANA rules this file matches.
-ianaVersion:"2018g"
+ianaVersion:"2018i"
 
 # countries:
 #
@@ -1811,19 +1811,14 @@ countries:<
     priority:2
   >
   timeZoneMappings:<
-    utcOffset:"6:00"
+    utcOffset:"5:00"
     id:"Asia/Qyzylorda"
     priority:1
   >
-
   timeZoneMappings:<
-    utcOffset:"5:00"
-    id:"Asia/Aqtau"
-  >
-  timeZoneMappings:<
-    utcOffset:"5:00"
-    id:"Asia/Oral"
-    priority:2
+    utcOffset:"6:00"
+    id:"Asia/Qostanay"
+    priority:1
   >
   timeZoneMappings:<
     utcOffset:"5:00"
@@ -1832,8 +1827,17 @@ countries:<
   >
   timeZoneMappings:<
     utcOffset:"5:00"
+    id:"Asia/Aqtau"
+  >
+  timeZoneMappings:<
+    utcOffset:"5:00"
     id:"Asia/Atyrau"
     priority:1
+  >
+  timeZoneMappings:<
+    utcOffset:"5:00"
+    id:"Asia/Oral"
+    priority:2
   >
 >
 
@@ -2919,7 +2923,7 @@ countries:<
 countries:<
   isoCode:"st"
   timeZoneMappings:<
-    utcOffset:"1:00"
+    utcOffset:"0:00"
     id:"Africa/Sao_Tome"
   >
 >
