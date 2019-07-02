@@ -1276,7 +1276,6 @@
       <id>Europe/Moscow</id>
       <id>Europe/Volgograd</id>
       <id>Europe/Kirov</id>
-      <id>Europe/Simferopol</id>
 
       <!-- 2:00 -->
       <id>Europe/Kaliningrad</id>
@@ -1478,6 +1477,7 @@
       <id>Europe/Kiev</id>
       <id>Europe/Uzhgorod</id>
       <id>Europe/Zaporozhye</id>
+      <id>Europe/Simferopol</id>
     </country>
 
     <!-- UGANDA, 3:00 -->
