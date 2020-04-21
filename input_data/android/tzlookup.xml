@@ -322,18 +322,24 @@
 
     <!-- CANADA -->
     <country code="ca">
-      <!-- -3:30 -->
+      <!--  The following zones are in rough population order to support telephony
+            time zone detection. -->
+      <id>America/Toronto</id>
+      <id>America/Vancouver</id>
+      <id>America/Edmonton</id>
+      <id>America/Winnipeg</id>
+      <id>America/Halifax</id>
       <id>America/St_Johns</id>
 
+      <!-- Other zones are in offset (in July) order. -->
+
       <!-- -4:00 -->
-      <id>America/Halifax</id>
       <id>America/Glace_Bay</id>
       <id>America/Moncton</id>
       <id>America/Goose_Bay</id>
       <id>America/Blanc-Sablon</id>
 
       <!-- -5:00 -->
-      <id>America/Toronto</id>
       <id>America/Nipigon</id>
       <id>America/Thunder_Bay</id>
       <id>America/Iqaluit</id>
@@ -341,7 +347,6 @@
       <id>America/Atikokan</id>
 
       <!-- -6:00 -->
-      <id>America/Winnipeg</id>
       <id>America/Regina</id>
       <id>America/Rankin_Inlet</id>
       <id>America/Rainy_River</id>
@@ -349,17 +354,15 @@
       <id>America/Resolute</id>
 
       <!-- -7:00 -->
-      <id>America/Edmonton</id>
       <id>America/Cambridge_Bay</id>
       <id>America/Yellowknife</id>
       <id>America/Inuvik</id>
+      <id>America/Whitehorse</id>
       <id>America/Dawson_Creek</id>
       <id>America/Creston</id>
       <id>America/Fort_Nelson</id>
 
       <!-- -8:00 -->
-      <id>America/Vancouver</id>
-      <id>America/Whitehorse</id>
       <id>America/Dawson</id>
     </country>
 
@@ -631,7 +634,7 @@
       <id>America/Scoresbysund</id>
 
       <!-- -3:00 -->
-      <id>America/Godthab</id>
+      <id>America/Nuuk</id>
 
       <!-- -4:00 -->
       <id>America/Thule</id>
