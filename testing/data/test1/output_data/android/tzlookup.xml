@@ -101,11 +101,11 @@
       <!-- 12:00 -->
       <id>Antarctica/McMurdo</id>
 
+      <!-- 11:00 -->
+      <id>Antarctica/Casey</id>
+
       <!-- 10:00 -->
       <id>Antarctica/DumontDUrville</id>
-
-      <!-- 8:00 -->
-      <id>Antarctica/Casey</id>
 
       <!-- 7:00 -->
       <id>Antarctica/Davis</id>
@@ -164,8 +164,6 @@
       <id>Australia/Hobart</id>
       <id>Australia/Currie</id>
       <id>Australia/Lindeman</id>
-
-      <!-- 11:00 -->
       <id>Antarctica/Macquarie</id>
 
       <!-- 10:30 -->
