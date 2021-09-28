@@ -18,6 +18,7 @@
 
 from __future__ import print_function
 
+import argparse
 import glob
 import os
 import re
@@ -184,7 +185,7 @@ def BuildTzlookup(iana_data_dir):
                          countryzones_source_file, zone_tab_file, tzlookup_dest_file])
 
 
-def CreateDistroFiles(iana_data_version, output_dir):
+def CreateDistroFiles(iana_data_version, android_revision, output_dir):
   create_distro_script = '%s/distro/tools/create-distro.py' % timezone_dir
 
   tzdata_file = '%s/iana/tzdata' % timezone_output_data_dir
@@ -204,6 +205,7 @@ def CreateDistroFiles(iana_data_version, output_dir):
 
   subprocess.check_call([create_distro_script,
       '-iana_version', iana_data_version,
+      '-revision', str(android_revision),
       '-tzdata', tzdata_file,
       '-icu', icu_file,
       '-tzlookup', tzlookup_file,
@@ -215,9 +217,18 @@ def UpdateTestFiles():
   subprocess.check_call([update_test_files_script], cwd=testing_data_dir)
 
 
-# Run with no arguments from any directory, with no special setup required.
+# Run from any directory, with no special setup required.
+# In the rare case when tzdata has to be updated, but under the same version,
+# pass "-revision" argument.
 # See http://www.iana.org/time-zones/ for more about the source of this data.
 def main():
+  parser = argparse.ArgumentParser()
+  parser.add_argument('-revision', type=int, default=1,
+      help='The distro revision for the IANA version, default = 1')
+
+  args = parser.parse_args()
+  android_revision = args.revision
+
   print('Source data file structure: %s' % timezone_input_data_dir)
   print('Source tools file structure: %s' % timezone_input_tools_dir)
   print('Output data file structure: %s' % timezone_output_data_dir)
@@ -242,7 +253,7 @@ def main():
 
   # Create a distro file from the output from prior stages.
   distro_output_dir = '%s/distro' % timezone_output_data_dir
-  CreateDistroFiles(iana_data_version, distro_output_dir)
+  CreateDistroFiles(iana_data_version, android_revision, distro_output_dir)
 
   # Update test versions of distro files too.
   UpdateTestFiles()
