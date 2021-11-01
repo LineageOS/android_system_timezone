@@ -1732,7 +1732,7 @@ countries:<
 
   timeZoneMappings:<
     utcOffset:"13:00"
-    id:"Pacific/Enderbury"
+    id:"Pacific/Kanton"
   >
 
   timeZoneMappings:<
