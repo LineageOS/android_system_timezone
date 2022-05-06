@@ -55,10 +55,8 @@ def GenerateZicInputFile(extracted_iana_data_dir):
   zic_input_file_name = 'rearguard.zi'
 
   # 'NDATA=' is used to remove unnecessary rules files.
-  # 'PACKRATDATA=backzone' is used to include legacy data (present on Android up
-  # to and including O-MR1).
   subprocess.check_call(['make', '-C', extracted_iana_data_dir, 'NDATA=',
-                         'PACKRATDATA=backzone', zic_input_file_name])
+                         zic_input_file_name])
 
   zic_input_file = '%s/%s' % (extracted_iana_data_dir, zic_input_file_name)
   if not os.path.exists(zic_input_file):
