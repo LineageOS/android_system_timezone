@@ -1475,8 +1475,6 @@
     <!-- UKRAINE, 2:00 -->
     <country code="ua">
       <id>Europe/Kiev</id>
-      <id>Europe/Uzhgorod</id>
-      <id>Europe/Zaporozhye</id>
       <id>Europe/Simferopol</id>
     </country>
 
