@@ -337,8 +337,6 @@
       <id>America/Blanc-Sablon</id>
 
       <!-- -5:00 -->
-      <id>America/Nipigon</id>
-      <id>America/Thunder_Bay</id>
       <id>America/Iqaluit</id>
       <id>America/Pangnirtung</id>
       <id>America/Atikokan</id>
@@ -346,7 +344,6 @@
       <!-- -6:00 -->
       <id>America/Regina</id>
       <id>America/Rankin_Inlet</id>
-      <id>America/Rainy_River</id>
       <id>America/Swift_Current</id>
       <id>America/Resolute</id>
 
