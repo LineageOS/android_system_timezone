@@ -1,3 +1,11 @@
+### 2022g
+
+Since introduction of Europe/Kyiv (2022b, 10 Aug 2022) we were carrying local
+patch: Europe/Kyiv in zone.tab is renamed back to Europe/Kiev as alternative
+names are not supported in this release and there are no ICU translations
+for Europe/Kyiv. Doing so has no visible effect on users as we do not expose
+Olson IDs and these time zones are identical.
+
 ### 2022a rev. 2
 
 TZDB 2022b introduces `Europe/Kyiv` and merges more time zones which were
@@ -9,7 +17,6 @@ decision was made to prepare smaller release which does not need ICU patches.
 
 tzdata archieve is prepared manually by applying Iran and Chile changes on
 top of 2022a tag.
-
 
 ### 2022a
 
