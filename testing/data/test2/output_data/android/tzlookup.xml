@@ -338,7 +338,6 @@
 
       <!-- -5:00 -->
       <id>America/Iqaluit</id>
-      <id>America/Pangnirtung</id>
       <id>America/Atikokan</id>
 
       <!-- -6:00 -->
@@ -627,7 +626,7 @@
       <!-- -1:00 -->
       <id>America/Scoresbysund</id>
 
-      <!-- -3:00 -->
+      <!-- -2:00 -->
       <id>America/Nuuk</id>
 
       <!-- -4:00 -->
@@ -1024,6 +1023,7 @@
       <id>America/Mexico_City</id>
       <id>America/Merida</id>
       <id>America/Monterrey</id>
+      <id>America/Chihuahua</id>
       <id>America/Matamoros</id>
       <id>America/Bahia_Banderas</id>
 
@@ -1031,7 +1031,7 @@
       <id>America/Cancun</id>
 
       <!-- -7:00 -->
-      <id>America/Chihuahua</id>
+      <id>America/Ciudad_Juarez</id>
       <id>America/Hermosillo</id>
       <id>America/Mazatlan</id>
       <id>America/Ojinaga</id>
