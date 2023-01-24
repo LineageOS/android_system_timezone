@@ -1,7 +1,48 @@
 This directory contains tools for time zone updates.
 
-Data update tools
-=================
+Directory structure
+===================
+
+distro
+  - Code related to "distros", the collection of files that can be used to
+    update time zone rules on Android devices. See distro/README for details.
+
+input_data
+  - Contains files that provide inputs to the time zone rules update process.
+    Some files come from external sources and some are mastered in Android.
+    See also download-iana-data.py.
+
+    Android tries not to carry patches over IANA, but they can be necessary,
+    particularly on old releases, e.g. if legacy time zone IDs are preferred
+    because translations are not available for them in old versions of ICU.
+    In such case:
+      - iana/original stores unmodified IANA files.
+      - iana/patches stores Android specific patches.
+      - iana/patched contains original files with patches mentioned above
+        applied. Empty if there are no patches.
+
+output_data
+  - Contains some derived files from the time zone rules update process and
+    used in the Android system image and distros. Some files are also held by
+    ICU - see also update-tzdata.py
+
+testing
+  - Contains tools and scripts related to testing time zone update code. See
+    testing/data/README for details.
+
+tzdatacheck
+  - Source code for a binary executed during boot and used to ensure that a
+    device doesn't boot with incompatible/outdated time zone data installed
+    /data (as could happen if the device has just received an OTA upgrade).
+    It is also responsible for committing staged install/uninstalls.
+
+zone_compactor
+  - Used to create Android's native tzdata file format from the files
+    produced by the zic tool. See also update-tzdata.py.
+
+
+Data file update tools
+======================
 
 download-iana-data.py
   - A helper script run before update-tzdata.py.

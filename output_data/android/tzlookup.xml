@@ -1024,8 +1024,9 @@
       <id>America/Merida</id>
       <id>America/Monterrey</id>
       <id>America/Chihuahua</id>
-      <id>America/Matamoros</id>
       <id>America/Bahia_Banderas</id>
+      <id>America/Matamoros</id>
+      <id>America/Ojinaga</id>
 
       <!-- -5:00 -->
       <id>America/Cancun</id>
@@ -1034,7 +1035,6 @@
       <id>America/Ciudad_Juarez</id>
       <id>America/Hermosillo</id>
       <id>America/Mazatlan</id>
-      <id>America/Ojinaga</id>
 
       <!-- -8:00 -->
       <id>America/Tijuana</id>
