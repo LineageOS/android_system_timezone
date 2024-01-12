@@ -175,7 +175,7 @@
    <id notafter="73472400000" repl="America/Regina">America/Swift_Current</id>
    <id notafter="1130659200000" repl="America/Winnipeg">America/Rankin_Inlet</id>
    <id notafter="1173600000000" repl="America/Winnipeg">America/Resolute</id>
-   <id notafter="1604214000000" repl="America/Whitehorse">America/Dawson_Creek</id>
+   <id>America/Dawson_Creek</id>
    <id notafter="84013200000" repl="America/Dawson_Creek">America/Creston</id>
    <id notafter="1425808800000" repl="America/Dawson_Creek">America/Fort_Nelson</id>
    <id notafter="294228000000" repl="America/Edmonton">America/Inuvik</id>
@@ -331,8 +331,8 @@
   </country>
   <country code="gl" default="America/Nuuk" everutc="y">
    <id>America/Danmarkshavn</id>
-   <id>America/Scoresbysund</id>
    <id alts="America/Godthab">America/Nuuk</id>
+   <id notafter="1711846800000" repl="America/Nuuk">America/Scoresbysund</id>
    <id>America/Thule</id>
   </country>
   <country code="gm" default="Africa/Banjul" everutc="y">
