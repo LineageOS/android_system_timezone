@@ -58,3 +58,10 @@ networks:<
   countryIsoCode: "gu"
 >
 
+networks:<
+  # American Samoa Telecommunications ASTCA  http://b/328151581
+  mcc: "311"
+  mnc: "780"
+  countryIsoCode: "as"
+>
+
