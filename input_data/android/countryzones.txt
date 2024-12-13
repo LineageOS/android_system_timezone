@@ -25,7 +25,7 @@
 # a time zone for an Android device.
 
 # ianaVersion: The version of the IANA rules this file matches.
-ianaVersion:"2024a"
+ianaVersion:"2024b"
 
 # countries:
 #
@@ -2211,13 +2211,8 @@ countries:<
     id:"Asia/Ulaanbaatar"
     # 1.145M
     priority:1145
+    alternativeIds: "Asia/Choibalsan"
     alternativeIds: "Asia/Ulan_Bator"
-  >
-  timeZoneMappings:<
-    utcOffset:"8:00"
-    id:"Asia/Choibalsan"
-    # 38K
-    priority:38
   >
 
   timeZoneMappings:<
