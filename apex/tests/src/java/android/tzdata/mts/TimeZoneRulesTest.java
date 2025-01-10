@@ -44,11 +44,11 @@ public class TimeZoneRulesTest {
 
     @Test
     public void preHistoricInDaylightTime() {
-        // A zone that lacks an explicit transition at Integer.MIN_VALUE with zic 2019a and 2019a
+        // A zone that lacks an explicit transition at Integer.MIN_VALUE with zic 2023a and 2024b
         // data.
         TimeZone tz = TimeZone.getTimeZone("CET");
 
-        long firstTransitionTimeMillis = -1693706400000L; // Apr 30, 1916 22:00:00 GMT
+        long firstTransitionTimeMillis = -1693702800000L; // Apr 30, 1916 23:00:00 GMT
         assertEquals(7200000L, tz.getOffset(firstTransitionTimeMillis));
         assertTrue(tz.inDaylightTime(new Date(firstTransitionTimeMillis)));
 
