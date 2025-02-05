@@ -25,7 +25,7 @@
 # a time zone for an Android device.
 
 # ianaVersion: The version of the IANA rules this file matches.
-ianaVersion:"2024b"
+ianaVersion:"2025a"
 
 # countries:
 #
@@ -2575,7 +2575,7 @@ countries:<
 countries:<
   isoCode:"py"
   timeZoneMappings:<
-    utcOffset:"-4:00"
+    utcOffset:"-3:00"
     id:"America/Asuncion"
   >
 >
