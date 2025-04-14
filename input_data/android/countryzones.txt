@@ -25,7 +25,7 @@
 # a time zone for an Android device.
 
 # ianaVersion: The version of the IANA rules this file matches.
-ianaVersion:"2025a"
+ianaVersion:"2025b"
 
 # countries:
 #
@@ -1077,6 +1077,7 @@ countries:<
   timeZoneMappings:<
     utcOffset:"-3:00"
     id:"America/Punta_Arenas"
+    alternativeIds: "America/Coyhaique"
   >
 
   timeZoneMappings:<
