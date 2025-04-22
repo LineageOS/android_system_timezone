@@ -207,6 +207,7 @@
   </country>
   <country code="cl" default="America/Santiago" everutc="n">
    <id>America/Punta_Arenas</id>
+   <id notafter="1742439600000">America/Coyhaique</id>
    <id>America/Santiago</id>
    <id>Pacific/Easter</id>
   </country>
