@@ -7,5 +7,10 @@
   <network mcc="310" mnc="370" country="gu"/>
   <network mcc="310" mnc="470" country="gu"/>
   <network mcc="311" mnc="780" country="as"/>
+  <network mcc="234" mnc="55" country="je"/>
+  <network mcc="234" mnc="50" country="je"/>
+  <network mcc="234" mnc="03" country="je"/>
+  <network mcc="234" mnc="58" country="im"/>
+  <network mcc="234" mnc="36" country="im"/>
  </networks>
 </telephony_lookup>
