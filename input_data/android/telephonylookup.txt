@@ -65,3 +65,38 @@ networks:<
   countryIsoCode: "as"
 >
 
+networks:<
+  # Sure  http://b/411132517
+  mcc: "234"
+  mnc: "55"
+  countryIsoCode: "je"
+>
+
+networks:<
+  # JT  http://b/411132517
+  mcc: "234"
+  mnc: "50"
+  countryIsoCode: "je"
+>
+
+networks:<
+  # Airtel-Vodafone  http://b/411132517
+  mcc: "234"
+  mnc: "03"
+  countryIsoCode: "je"
+>
+
+networks:<
+  # Manx Telecom  http://b/411132517
+  mcc: "234"
+  mnc: "58"
+  countryIsoCode: "im"
+>
+
+networks:<
+  # Sure  http://b/411132517
+  mcc: "234"
+  mnc: "36"
+  countryIsoCode: "im"
+>
+
