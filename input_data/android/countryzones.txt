@@ -1869,6 +1869,11 @@ countries:<
 countries:<
   isoCode:"ki"
   defaultTimeZoneId:"Pacific/Tarawa"
+
+  # Boost the strength of the country default:
+  # >91% of the population use "Pacific/Tarawa"
+  defaultTimeZoneBoost: true
+
   timeZoneMappings:<
     utcOffset:"14:00"
     id:"Pacific/Kiritimati"
@@ -2580,6 +2585,11 @@ countries:<
 countries:<
   isoCode:"pf"
   defaultTimeZoneId:"Pacific/Tahiti"
+
+  # Boost the strength of the country default:
+  # >96% of the population use "Pacific/Tahiti"
+  defaultTimeZoneBoost: true
+
   timeZoneMappings:<
     utcOffset:"-9:00"
     id:"Pacific/Gambier"

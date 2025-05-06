@@ -434,7 +434,7 @@
   <country code="kh" default="Asia/Phnom_Penh" everutc="n">
    <id>Asia/Phnom_Penh</id>
   </country>
-  <country code="ki" default="Pacific/Tarawa" everutc="n">
+  <country code="ki" default="Pacific/Tarawa" defaultBoost="y" everutc="n">
    <id>Pacific/Kiritimati</id>
    <id alts="Pacific/Enderbury">Pacific/Kanton</id>
    <id>Pacific/Tarawa</id>
@@ -628,7 +628,7 @@
   <country code="pe" default="America/Lima" everutc="n">
    <id>America/Lima</id>
   </country>
-  <country code="pf" default="Pacific/Tahiti" everutc="n">
+  <country code="pf" default="Pacific/Tahiti" defaultBoost="y" everutc="n">
    <id>Pacific/Gambier</id>
    <id>Pacific/Marquesas</id>
    <id>Pacific/Tahiti</id>
