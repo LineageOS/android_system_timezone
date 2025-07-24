@@ -100,3 +100,10 @@ networks:<
   countryIsoCode: "im"
 >
 
+networks:<
+  # Liberty PR  http://b/370372605
+  mcc: "313"
+  mnc: "790"
+  countryIsoCode: "pr"
+>
+
