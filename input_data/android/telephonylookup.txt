@@ -45,6 +45,22 @@
 # The (lower cased) ISO 3166 2-character country code. Must be a known valid code.
 
 networks:<
+  # IT&E http://b/435560561
+  # Appears in MP too, but Pacific/Saipan is an alias to Pacific/Guam.
+  # That's better than not finding GMT+10:00 in US.
+  mcc: "310"
+  mnc: "110"
+  countryIsoCode: "gu"
+>
+
+networks:<
+  # Teleguam Holdings, LLC http://b/435560561
+  mcc: "310"
+  mnc: "140"
+  countryIsoCode: "gu"
+>
+
+networks:<
   # DOCOMO PACIFIC http://b/117863016
   mcc: "310"
   mnc: "370"
