@@ -4,6 +4,8 @@
 
 --><telephony_lookup>
  <networks>
+  <network mcc="310" mnc="110" country="gu"/>
+  <network mcc="310" mnc="140" country="gu"/>
   <network mcc="310" mnc="370" country="gu"/>
   <network mcc="310" mnc="470" country="gu"/>
   <network mcc="311" mnc="780" country="as"/>
