@@ -25,7 +25,7 @@
 # a time zone for an Android device.
 
 # ianaVersion: The version of the IANA rules this file matches.
-ianaVersion:"2025c"
+ianaVersion:"2026b"
 
 # countries:
 #
@@ -852,7 +852,7 @@ countries:<
     alternativeIds: "Canada/Eastern"
   >
   timeZoneMappings:<
-    utcOffset:"-8:00"
+    utcOffset:"-7:00"
     id:"America/Vancouver"
     # 2.26M
     priority:2260
