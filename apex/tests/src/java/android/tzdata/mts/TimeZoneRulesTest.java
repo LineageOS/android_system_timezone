@@ -305,7 +305,7 @@ public class TimeZoneRulesTest {
         assertTrue(vancouver.inDaylightTime(new Date(1777593600000L))); // 1 May 2026
         assertFalse(vancouver.inDaylightTime(new Date(1796083200000L))); // 1 Dec 2026
         // TimeZone.getDisplayName implicitly depends on system time.
-        Locale[] locales = { Locale.of("en_US"), Locale.of("en_GB"), Locale.of("en_CA") };
+        Locale[] locales = { Locale.US, Locale.UK, Locale.CANADA };
         for (Locale locale : locales) {
             // 1 Nov 2026 09:00 GMT: America/Vancouver's last transition happens at this time.
             if (System.currentTimeMillis() >= 1793523600000L) {
