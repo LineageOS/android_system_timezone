@@ -1,3 +1,22 @@
+### 2026b
+
+In `2026b` `America/Vancouver` moves to permanent GMT-7:00, which, under
+previous rules, was considered as daylight saving time. In TZDB it is
+modelled as standard time GMT-7:00. That breaks display name logic as
+`Pacific Standard Time` would be returned for a time zone which
+is GMT-07:00.
+
+Representing it as a permanent DST time zone with -8 hours standard offset
+and +1 hour DST offset won't work either as in that case
+`java.util.TimeZone.getDSTSavings()` will return 0, while `getRawOffset`
+will return 8 hours.
+
+Instead, `America/Vancouver` was moved into `America_Mountain`. Downside
+is that in various formatting APIs it will be shown as
+`Mountain Standard Time` and not `Pacific Daylight Time` or `Pacific Time`.
+This is not ideal, but technically true and there time zones in Canada
+which are attributed to `America_Mountain`.
+
 ### 2022g
 
 Since introduction of Europe/Kyiv (2022b, 10 Aug 2022) we were carrying local
