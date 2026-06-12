@@ -852,7 +852,7 @@ countries:<
     alternativeIds: "Canada/Eastern"
   >
   timeZoneMappings:<
-    utcOffset:"-7:00"
+    utcOffset:"-8:00"
     id:"America/Vancouver"
     # 2.26M
     priority:2260

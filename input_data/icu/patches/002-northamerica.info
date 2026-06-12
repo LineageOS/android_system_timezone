@@ -1,0 +1,9 @@
+To model America/Vancouver as permanent DST in order for formatting APIs to show
+Pacific Daylight Time instead of Pacific Standard Time (which is wrong), Mountain
+Standard Time (technically right, confusing), or GMT-7 (even more technically
+right, but is also confusing).
+A distant future transitions are needed to workaround a time zone picker bug:
+  * zoneinfo file should have a transition which starts after current date.
+  * Because transitions to identical offset/dst are merged a transition to
+    the standard time is added.
+
