@@ -1,3 +1,21 @@
+### 2026b rev. 2
+
+Fix the display name of `America/Vancouver`. Instead,
+`Pacific Daylight Time` is displayed after 1 Nov 2026, instead of
+`Mountain Standard Time`.
+
+In 2026b update `America/Vancouver` was moved into `Americ_Mountain`
+metazone. While it is technically correct, this might be confusing to
+users. Instead, there a way to patch IANA files.
+
+Due to a bug in Android's `java.util.TimeZone` implementation permanent
+DST time zones were not handled well, but in certain scenarios only: if
+the last transition happened before current system time. So IANA rules
+were patched and an extra distant future transition was added to
+`America/Vancouver`.
+
+Fix is in external/icu repo and commit's SHA is 600a228276321652135072038d3cd03e1ded5a10.
+
 ### 2026b
 
 In `2026b` `America/Vancouver` moves to permanent GMT-7:00, which, under
