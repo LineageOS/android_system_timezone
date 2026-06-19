@@ -33,8 +33,10 @@ i18nutil.CheckDirExists(timezone_dir, 'system/timezone')
 timezone_input_data_dir = os.path.realpath('%s/input_data' % timezone_dir)
 iana_input_data_dir = os.path.realpath('%s/iana' % timezone_input_data_dir)
 iana_original_input_data_dir = os.path.realpath('%s/original' % iana_input_data_dir)
-patches_dir = os.path.realpath('%s/patches' % iana_input_data_dir)
-iana_patched_data_dir = os.path.realpath('%s/patched' % iana_input_data_dir)
+tzdata_patches_dir = os.path.realpath('%s/patches' % iana_input_data_dir)
+iana_patched_for_tzdata_data_dir = os.path.realpath('%s/patched' % iana_input_data_dir)
+icu_patches_dir = os.path.realpath('%s/icu/patches' % timezone_input_data_dir)
+iana_patched_for_icu_data_dir = os.path.realpath('%s/icu/patched' % timezone_input_data_dir)
 
 temp_dir = tempfile.mkdtemp("-tzdata")
 
@@ -78,21 +80,27 @@ def repack(temp_dir, dest):
   os.chdir(old_cwd)
 
 """ Returns path to archive which should be used in tzdata files generation. """
-def Apply():
+def Apply(patches_dir, output_dir):
   iana_data_tar_file = tzdatautil.GetIanaTarFile(iana_original_input_data_dir, 'tzdata')
   extractTar(iana_data_tar_file, temp_dir)
 
   # There should be one single file only and it is always created anew if
   # patches are available.
-  for filename in os.listdir(iana_patched_data_dir):
-    os.remove('%s/%s' % (iana_patched_data_dir, filename))
+  for filename in os.listdir(output_dir):
+    os.remove('%s/%s' % (output_dir, filename))
 
   was_patched = applyPatchesTo(patches_dir, temp_dir)
   if was_patched:
     archive_name = iana_data_tar_file[iana_data_tar_file.rfind('/') + 1:]
-    patched_data_tar_file = '%s/%s' % (iana_patched_data_dir, archive_name)
+    patched_data_tar_file = '%s/%s' % (output_dir, archive_name)
     repack(temp_dir, patched_data_tar_file)
     return patched_data_tar_file
   else:
     return iana_data_tar_file
+
+def ApplyIcu():
+  return Apply(icu_patches_dir, iana_patched_for_icu_data_dir)
+
+def ApplyTzdata():
+  return Apply(tzdata_patches_dir, iana_patched_for_tzdata_data_dir)
 

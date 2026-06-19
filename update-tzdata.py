@@ -30,6 +30,7 @@ import tempfile
 sys.path.append('%s/external/icu/tools' % os.environ.get('ANDROID_BUILD_TOP'))
 import i18nutil
 import icuutil
+import patches
 import tzdatautil
 import patches
 
@@ -249,9 +250,9 @@ def main():
   print('Source tools file structure: %s' % timezone_input_tools_dir)
   print('Output data file structure: %s' % timezone_output_data_dir)
 
-  iana_data_tar_file = patches.Apply()
+  iana_data_tar_file = patches.ApplyIcu()
   iana_data_version = GetIanaVersion(iana_data_tar_file)
-  print('IANA time zone data release %s in %s ...' % (iana_data_version, iana_data_tar_file))
+  print('ICU: IANA time zone data release %s in %s ...' % (iana_data_version, iana_data_tar_file))
 
   icu_dir = icuutil.icuDir()
   print('Found icu in %s ...' % icu_dir)
@@ -262,6 +263,9 @@ def main():
   zic_binary_file = BuildZic(iana_tools_dir)
 
   iana_data_dir = '%s/iana_data' % tmp_dir
+  iana_data_tar_file = patches.ApplyTzdata()
+  print('tzdata: IANA time zone data release %s in %s ...' % (iana_data_version, iana_data_tar_file))
+
   ExtractTarFile(iana_data_tar_file, iana_data_dir)
   BuildTzdata(zic_binary_file, iana_data_dir, iana_data_version)
   BuildTzlookup(iana_data_dir)
