@@ -1,17 +1,17 @@
 diff --git a/northamerica b/northamerica
-index 3e8641e1..53d0a62f 100644
+index 3c53eb60..ba2184ef 100644
 --- a/northamerica
 +++ b/northamerica
-@@ -2021,10 +2021,9 @@ Rule	Vanc	1962	2006	-	Oct	lastSun	2:00	0	S
+@@ -2093,10 +2093,9 @@ Rule	Vanc	1962	2006	-	Oct	lastSun	2:00	0	S
  Zone America/Vancouver	-8:12:28 -	LMT	1884
  			-8:00	Vanc	P%sT	1987
  			-8:00	Canada	P%sT	2026 Mar  9
 -			# Temporary hack; see above.
--			-8:00	1:00	PDT	2026 Nov  1 02:00
+-			-8:00	1:00	PDT	2026 Nov  1  2:00
 -			# End of temporary hack.
 -			-7:00	-	MST
 +			-8:00	1:00	PDT	2100 Mar  9
-+			-7:00	-	PDT	2100 Mar 10
++			-7:00	-	PDT	2100 Mar  10
 +			-8:00	1:00	PacT
  Zone America/Dawson_Creek -8:00:56 -	LMT	1884
  			-8:00	Canada	P%sT	1947
