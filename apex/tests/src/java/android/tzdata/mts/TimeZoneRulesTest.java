@@ -147,7 +147,7 @@ public class TimeZoneRulesTest {
                 }
             }
 
-            // Sanity check that whenever a display name is just a GMT string that it's the
+            // Confidence check that whenever a display name is just a GMT string that it's the
             // right GMT string.
             String gmtDst = formatGmtString(tz, true);
             String gmtStd = formatGmtString(tz, false);
@@ -301,12 +301,18 @@ public class TimeZoneRulesTest {
     public void testCanada() {
         TimeZone vancouver = TimeZone.getTimeZone("America/Vancouver");
         TimeZone edmonton = TimeZone.getTimeZone("America/Edmonton");
+        TimeZone inuvik = TimeZone.getTimeZone("America/Inuvik");
+        TimeZone winnipeg = TimeZone.getTimeZone("America/Winnipeg");
         assertTrue(vancouver.inDaylightTime(new Date(1777593600000L))); // 1 May 2026
         assertTrue(edmonton.inDaylightTime(new Date(1777593600000L)));
+        assertTrue(inuvik.inDaylightTime(new Date(1777593600000L)));
+        assertTrue(winnipeg.inDaylightTime(new Date(1777593600000L)));
         // 1 Nov 2026 is when DST would've ended if DST was still in place in America/Vancouver.
         // Checking that after that date America/Vancouver is still considered to be in DST.
         assertTrue(vancouver.inDaylightTime(new Date(1796083200000L))); // 1 Dec 2026
         assertTrue(edmonton.inDaylightTime(new Date(1796083200000L)));
+        assertTrue(inuvik.inDaylightTime(new Date(1796083200000L)));
+        assertTrue(winnipeg.inDaylightTime(new Date(1796083200000L)));
     }
 
     /**
