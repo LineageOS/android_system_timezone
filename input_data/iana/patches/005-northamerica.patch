@@ -1,0 +1,17 @@
+diff --git i/northamerica w/northamerica
+index a1b2c3d4..e5f6a7b8 100644
+--- i/northamerica
++++ w/northamerica
+@@ -1873,10 +1873,8 @@ Rule	Winn	1987	2005	-	Apr	Sun>=1	2:00s	1:00	D
+ Zone America/Winnipeg	-6:28:36 -	LMT	1887 Jul 16
+ 			-6:00	Winn	C%sT	2006
+ 			-6:00	Canada	C%sT	2026 Oct 31
+-			# Temporary hack; see above.
+-			-6:00	Canada	CDT	2026 Nov  1  2:00
+-			# End of temporary hack.
+-			-5:00	-	EST
++			-6:00	1:00	CDT     2100 Mar  8
++			-6:00	1:00	CenT
+ 
+ 
+ # Saskatchewan
